@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "Auto-More Sidebar",
+  "version": "1.0",
+
+  "description": "Automatically shows more of your followed channels in the sidebar, pushing away those useless Recommended Channels.",
+
+  "icons": {
+    "48": "icons/mega-man-icon-48.png",
+    "96": "icons/mega-man-icon-96.png"
+  },
+
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.twitch.tv/*"],
+      "js": ["auto-more.js"]
+    }
+  ]
+}
